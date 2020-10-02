@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="asd example" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/asd" scriptParameters="$ProjectFileDir$/demo/profile.example.json ">
+    <method v="2" />
+  </configuration>
+</component>
