@@ -9,19 +9,11 @@
   "properties": {
     "alps": {
       "allOf": [
-        {"$ref": "global/alps.json"},
         {"$ref": "app/alps.json"},
         {
           "properties": {
             "descriptor": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "allOf": [
-                  {"$ref": "global/descriptor.json#/definitions/descriptor"},
-                  {"$ref": "app/descriptor.json"}
-                ]
-              }
+              "$ref": "app/descriptor.json"
             }
           }
         }

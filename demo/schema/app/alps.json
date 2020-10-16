@@ -2,10 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Application root level extended schema",
   "readOnly": false,
+  "allOf": [{"$ref": "../global/alps.json"}],
   "properties": {
-    "foo": {
-      "type": "string",
-      "enum": ["red", "blue"]
-    }
   }
 }

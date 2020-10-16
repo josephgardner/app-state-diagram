@@ -2,13 +2,22 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Application descriptor extended schema",
   "readOnly": false,
-  "properties": {
-    "foo": {
-      "type": "string",
-      "enum": [
-        "red",
-        "blue"
-      ]
+  "type": "array",
+  "items": {
+    "type": "object",
+    "allOf": [
+      {
+        "$ref": "../global/descriptor.json#/definitions/descriptor"
+      }
+    ],
+    "properties": {
+      "color": {
+        "type": "string",
+        "enum": [
+          "red",
+          "blue"
+        ]
+      }
     }
   }
 }
