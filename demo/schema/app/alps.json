@@ -1,5 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Application root level extended schema",
+  "readOnly": false,
   "properties": {
+    "foo": {
+      "type": "string",
+      "enum": ["red", "blue"]
+    }
   }
 }

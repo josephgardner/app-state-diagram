@@ -1,13 +1,30 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Application Profile Schema",
   "type": "object",
-  "required": ["alps"],
   "readOnly": true,
+  "required": [
+    "alps"
+  ],
   "properties": {
     "alps": {
       "allOf": [
-        {"$ref": "base/alps.json"},
-        {"$ref": "app/alps.json"}
+        {"$ref": "global/alps.json"},
+        {"$ref": "app/alps.json"},
+        {
+          "properties": {
+            "descriptor": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "allOf": [
+                  {"$ref": "global/descriptor.json#/definitions/descriptor"},
+                  {"$ref": "app/descriptor.json"}
+                ]
+              }
+            }
+          }
+        }
       ]
     }
   }

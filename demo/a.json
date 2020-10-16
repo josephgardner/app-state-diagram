@@ -1,0 +1,11 @@
+{
+  "$schema": "schema/alps.json",
+  "alps": {
+    "doc": {
+      "format": "asciidoc",
+      "href": "",
+      "value": "a"
+    }
+  }
+}
+}

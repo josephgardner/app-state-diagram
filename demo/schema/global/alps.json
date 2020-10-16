@@ -1,5 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["descriptor"],
   "readOnly": true,
   "properties": {
     "version": {
@@ -7,9 +9,6 @@
     },
     "doc": {
       "$ref": "#/definitions/doc"
-    },
-    "descriptor": {
-      "$ref": "#/definitions/descriptor"
     },
     "ext": {
       "$ref": "#/definitions/ext"
@@ -60,10 +59,7 @@
       "items": {
         "type": "object",
         "description": "Defines the semantics of specific data elements or state transitions that MAY exist in an associated representation.",
-        "allOf": [{
-          "$ref": "../app/descriptor.json"
-        }
-        ],
+        "allOf": [{"$ref": "../app/descriptor.json"}],
         "properties": {
           "id": {
             "$ref": "#/definitions/id"
