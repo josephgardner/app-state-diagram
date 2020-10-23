@@ -67,7 +67,7 @@ abstract class AbstractDescriptor
         if ($this->parent instanceof stdClass) {
             $path = $this->parent->type === 'semantic' ? '' : "../{$this->parent->type}/";
             $jsonPath = sprintf('%s%s.json', $path, $this->parent->id);
-            $alpsDoc->link[] = ['rel' => 'parent', 'href' => $jsonPath];
+            $alpsDoc->alps->link[] = ['rel' => 'parent', 'href' => $jsonPath];
         }
 
         return $alpsDoc;
