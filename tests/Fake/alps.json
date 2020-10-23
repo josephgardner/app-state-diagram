@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/koriym/spec/master/schemas/alps.json",
+  "$schema": "https://raw.githubusercontent.com/koriym/spec/extended-schema/schemas/alps.json",
   "alps": {
     "descriptor": [
       {
